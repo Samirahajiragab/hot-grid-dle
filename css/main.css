@@ -23,43 +23,58 @@ body {
   margin: 0;
 }
 
-img{
+.img-flex {
   display:block;
   width: 100%;
 }
-.img-flex {
+
+figure{
+  margin: 0;
   position: relative;
 }
 
-.box1 {
+figcaption {
   position: absolute;
-  left: 3rem;
-  top: 6rem;
-  padding: 1em;
-  background-color: rgba(0, 0, 0, .3);
-  color: #fff;
-  border-radius: 7px;
-  max-width: 15em
-}
+  bottom: 1rem;
+  left: .5rem;
+  max-width: 15em;
 
-.box2 {
-  position: absolute;
-  left: 3rem;
-  top: 19rem;
-  padding: 1em;
+
+  padding: 1rem;
   background-color: rgba(0, 0, 0, .3);
+  border-radius: 10px;
   color: #fff;
-  border-radius: 7px;
-  max-width: 15em
 }
 
 .box3 {
-  position: absolute;
-  left: 3rem;
-  top: 32rem;
-  padding: 1em;
-  background-color: rgba(0, 0, 0, .3);
-  color: #fff;
-  border-radius: 7px;
-  max-width: 15em
+  display: none;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .box3 {
+    display: block;
+  }
+}
+
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
 }
